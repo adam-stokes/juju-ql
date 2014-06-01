@@ -10,17 +10,21 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Juju::Plugin::QL is ...",
+  "ABSTRACT" => "juju plugin for querying state server",
   "AUTHOR" => "Adam Stokes <adamjs\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
-  "DISTNAME" => "Juju-Plugin-QL",
-  "EXE_FILES" => [],
+  "DISTNAME" => "Juju-QL",
+  "EXE_FILES" => [
+    "bin/juju-ql"
+  ],
   "LICENSE" => "perl",
-  "NAME" => "Juju::Plugin::QL",
+  "NAME" => "Juju::QL",
   "PREREQ_PM" => {
-    "Mojo::Base" => 0
+    "Getopt::Long" => 0,
+    "Mojo::Base" => 0,
+    "Mojo::Log" => 0
   },
   "TEST_REQUIRES" => {
     "Mojolicious" => 0,
@@ -38,7 +42,9 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Getopt::Long" => 0,
   "Mojo::Base" => 0,
+  "Mojo::Log" => 0,
   "Mojolicious" => 0,
   "Pod::Elemental::Transformer::List" => 0,
   "Pod::Weaver::Section::WarrantyDisclaimer" => 0,

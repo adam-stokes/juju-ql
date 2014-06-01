@@ -1,6 +1,6 @@
 # NAME
 
-Juju::Plugin::QL - Juju::Plugin::QL is ...
+Juju::QL - juju plugin for querying state server
 
 # VERSION
 

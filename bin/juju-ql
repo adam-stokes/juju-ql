@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+# PODNAME: juju-ql
+# ABSTRACT: query language for juju state server
+
+use Mojo::Base -strict;
+
+use Juju::QL;
+Juju::QL->new()->run;

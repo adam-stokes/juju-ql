@@ -1,5 +1,5 @@
 ---
-abstract: 'Juju::Plugin::QL is ...'
+abstract: 'juju plugin for querying state server'
 author:
   - 'Adam Stokes <adamjs@cpan.org>'
 build_requires:
@@ -17,7 +17,9 @@ license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
-name: Juju-Plugin-QL
+name: Juju-QL
 requires:
+  Getopt::Long: '0'
   Mojo::Base: '0'
+  Mojo::Log: '0'
 version: '0.1'

@@ -1,4 +1,6 @@
+requires "Getopt::Long" => "0";
 requires "Mojo::Base" => "0";
+requires "Mojo::Log" => "0";
 
 on 'test' => sub {
   requires "Mojolicious" => "0";
