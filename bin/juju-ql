@@ -5,4 +5,5 @@
 use Mojo::Base -strict;
 
 use Juju::QL;
-Juju::QL->new()->run;
+my $app = Juju::QL->new;
+$app->run;
